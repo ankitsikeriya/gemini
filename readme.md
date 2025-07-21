@@ -1,0 +1,1 @@
+8. Then run the project using a local server or open the index.html file in the browser.

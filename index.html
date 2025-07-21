@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt and Response</title>
+<style>
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Modern font */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Use min-height for better responsiveness */
+  margin: 0;
+  background-color: #e6f7ff; /* Softer background */
+  color: #333; /* Darker text for readability */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  text-align: center;
+  width: 90%; /* Make it responsive */
+  max-width: 600px; /* But limit the maximum width */
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 8px; /* More spacing */
+  font-weight: 600; /* Semi-bold font */
+  color: #555; /* Slightly softer color */
+}
+
+/* Input Styles */
+input[type="text"] {
+  width: 100%; /* Responsive width */
+  padding: 12px; /* Increased padding */
+  margin-bottom: 20px; /* More spacing */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Slightly more rounded */
+  box-sizing: border-box;
+  font-size: 16px; /* Slightly larger font */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50; /* Highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 24px; /* Slightly larger button */
+  border: none;
+  border-radius: 6px; /* Slightly more rounded */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  transform: scale(0.95); /* Slight press effect */
+}
+
+/* Response Styles */
+#response {
+  margin-top: 30px; /* Increased margin */
+  padding: 15px; /* Increased padding */
+  border: 1px solid #ddd; /* Lighter border */
+  border-radius: 6px; /* Slightly more rounded */
+  background-color: #f9f9f9;
+  min-height: 70px; /* Increased min height */
+  width: 100%; /* Responsive width */
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 16px; /* Slightly larger font */
+  color: #444; /* Darker text color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <label for="prompt">Enter your prompt:</label>
+  <input type="text" id="prompt" name="prompt" placeholder="Type your prompt here...">
+  <button onclick="getResponse()">Get Response</button>
+  <div id="response"></div>
+</div>
+
+<script>
+function getResponse() {
+  const promptValue = document.getElementById("prompt").value;
+
+  // Placeholder response.  Replace with actual logic.
+  const responseText = "You entered: " + promptValue + ". This is a placeholder response.";
+
+  document.getElementById("response").innerText = responseText;
+}
+</script>
+
+</body>
+</html>
