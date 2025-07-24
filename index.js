@@ -14,6 +14,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 const execPromise = promisify(exec);
 
 async function executeCommand({command}) {
+  
   try {
     // Execute the command and return the result
     const {stdout, stderr} = await execPromise(command);
