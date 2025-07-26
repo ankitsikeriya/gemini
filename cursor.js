@@ -5,7 +5,7 @@ import { promisify } from "util";
 import os from 'os'
  
 import dotenv from 'dotenv';
-dotenv.config(); // Load environment variables from .env file
+dotenv.config(); // Load environment variables from .env file ,
 
 const platform = os.platform();
 
