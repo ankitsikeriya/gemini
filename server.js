@@ -10,7 +10,7 @@ async function main() {
     contents: "write a html and css code to give you a prompt and display the response",
   });
   console.log(response.text);
-}
+} 
 
 await main();
 
