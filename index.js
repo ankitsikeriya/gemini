@@ -7,7 +7,7 @@ import os from "os";
 const platform = os.platform();
 
 dotenv.config(); // Load environment variables from .env file
-//history initialized
+//history initialize
 const History = [];
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
