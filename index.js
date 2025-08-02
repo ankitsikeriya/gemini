@@ -6,7 +6,7 @@ import { promisify } from "util";
 import os from "os";  
 const platform = os.platform();
 //
-dotenv.config(); // Load environment variables from .env file 
+dotenv.config(); // Load environment variables from .env file  
 //history initialize
 const History = [];  
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
