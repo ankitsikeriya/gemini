@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import readlineSync from "readline-sync"; 
 import dotenv from "dotenv";
 import { exec } from "child_process"; 
-import { promisify } from "util";
+import { promisify } from "util";  
 import os from "os";    
 const platform = os.platform();       
 //
