@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { exec } from "child_process"; 
 import { promisify } from "util";
 import os from "os";    
-const platform = os.platform();     
+const platform = os.platform();       
 //
 dotenv.config(); // Load environment variables from .env file  
 //history initialize
